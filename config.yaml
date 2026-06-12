@@ -44,6 +44,13 @@ general_settings:
 litellm_settings:
   drop_params: true
   set_verbose: false
+  # Anthropic prompt caching: inject cache_control vào system message moi call
+  # anthropic/* -> tools + system prompt (phan lap ~90% prompt cua Jarmin) duoc
+  # cache: read $0.30/M thay vi $3/M. Gemini bo qua field nay (co implicit cache).
+  # Verify sau deploy: usage.cache_read_input_tokens > 0 tu call thu 2 trong 5 phut.
+  cache_control_injection_points:
+    - location: message
+      role: system
   cache: true
   cache_params:
     type: redis
