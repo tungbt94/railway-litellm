@@ -11,6 +11,10 @@ model_list:
     litellm_params:
       model: gemini/gemini-2.5-pro
       api_key: os.environ/GOOGLE_API_KEY
+  - model_name: gemma-4-26b-a4b-it
+    litellm_params:
+      model: gemini/gemma-4-26b-a4b-it
+      api_key: os.environ/GOOGLE_API_KEY
   - model_name: deepseek-v3.2
     litellm_params:
       model: openrouter/deepseek/deepseek-v3.2
