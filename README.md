@@ -32,6 +32,7 @@ One-click deploy of [LiteLLM](https://litellm.ai) on Railway -- a universal API 
 | `MISTRAL_API_KEY` | Mistral API key |
 | `GROQ_API_KEY` | Groq API key |
 | `GEMINI_API_KEY` | Google Gemini API key |
+| `GOOGLE_API_KEY` | Google AI Studio API key used by the `gemini/*` model routes |
 | `AWS_ACCESS_KEY_ID` | AWS access key (for Bedrock) |
 | `AWS_SECRET_ACCESS_KEY` | AWS secret key (for Bedrock) |
 | `AWS_REGION_NAME` | AWS region (for Bedrock) |
